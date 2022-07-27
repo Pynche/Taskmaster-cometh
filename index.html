@@ -6,11 +6,18 @@
 <title>Task List</title>
 </head>
 <body>
-   <p class="position-relative">
-    <div class="position-absolute bottom-0 end-0"><h4>Due Date:</h4>
-        <input type="datetime-local" id="Test_DatetimeLocal">
-    </div>
-    </p>
-
+    <main>
+        <div id="parent-ad">
+            <form action="/url" method="GET" id="assign">
+            <h2>Assigned to:</h2>
+                <input type="text" name="name" placeholder="Type Full Name" required>
+                <button type="submit">Submit</button>  
+            </form>
+            <p id="date">
+                <h2>Due Date:</h2>
+                    <input type="datetime-local" id="Test_DatetimeLocal">
+          </p>
+        </div>
+    </main>
 </body>
 </html>
