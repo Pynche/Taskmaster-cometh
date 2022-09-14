@@ -9,8 +9,8 @@
 }*/
 
 .assign-submit {
-display: inline-block;
-padding: 20px;
+    display: inline-block;
+    padding: 20px;
 }
 
 #parent-ad {
@@ -30,15 +30,16 @@ padding: 20px;
 }
 
 h1 {
-	font-size: 48px;
-	color: black;
-	background-color: #8B51F5;
-	width: 30%;
-	border-top-right-radius:20px;
-	border-bottom-right-radius:20px;
-	text-align: center;
-	font-family: Amiko, sans-serif;
+    font-size: 48px;
+    color: black;
+    background-color: #8B51F5;
+    width: 30%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    font-family: Amiko, sans-serif;
 }
+
 #form-warning {
     display: none;
 }
