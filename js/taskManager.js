@@ -3,7 +3,9 @@
 
 
 class TaskManager {
-    constructor(){ 
+    constructor(currentId = 0){ 
+
     this.tasks = [];
     }
 }
+
