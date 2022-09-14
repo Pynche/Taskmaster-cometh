@@ -1,39 +1,61 @@
 <!DOCTYPE html>
+<html>
+
+<head>
     <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<title>Task List</title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.
+        0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Task List</title>
+    </head>
+
 <body>
+    <!-- <p class="position-relative"> -->
+    <div class="position-absolute bottom-0 end-0">
+        <h4>Due Date:</h4>
+        <input type="datetime-local" id="Test_DatetimeLocal">
+    </div>
+    <!-- </p> -->
+
+
+
+
+
     <main>
-        <div id="parent-ad"> <!--need to maybe remove this id-->
+        <div id="parent-ad">
+            <!--need to maybe remove this id-->
             <form id="assign">
                 <h2>Task Name:</h2>
-                <input id="doThis" type="text"  placeholder="Enter New Task" required>
-                
+                <input id="doThis" type="text" placeholder="Enter New Task" required>
+
                 <h2>Description:</h2>
-                <textarea id="describeIt"  placeholder="Enter Description" ></textarea>
-                
-            <h2>Assigned to:</h2>
-                <input id="forYou" type="text" name="name" placeholder="Type Full Name" >
-                
-            
-            <p id="date">
+                <textarea id="describeIt" placeholder="Enter Description"></textarea>
+
+                <h2>Assigned to:</h2>
+                <input id="forYou" type="text" name="name" placeholder="Type Full Name">
+
+
+                <p id="date">
                 <h2>Due Date:</h2>
-                    <input type="datetime-local" id="Test_DatetimeLocal" name="taskDate"
-                    placeholder="9/1/2022">
-          </p>
-        
-        <button type="submit">Submit</button>  
-        <div id="form-warning" class="alert alert-info" role="alert"><str>Make sure all forms are filled!</str></div>
-    </form>
-</div>
+                <input type="datetime-local" id="Test_DatetimeLocal" name="taskDate" placeholder="9/1/2022">
+                </p>
+
+                <button type="submit">Submit</button>
+                <div id="form-warning" class="alert alert-info" role="alert">
+                    <str>Make sure all forms are filled!</str>
+                </div>
+            </form>
+        </div>
     </main>
     <script src="/js/index.js"></script>
     <script src="/js/taskManager.js"></script>
 </body>
+
 </html>
