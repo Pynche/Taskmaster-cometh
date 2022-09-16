@@ -1,3 +1,5 @@
+let tM = new TaskManager(0);
+
 function validFormFieldInput(data) {
     if (data == null || data == '') {
        const warning = document.querySelector('#form-warning');
@@ -5,18 +7,23 @@ function validFormFieldInput(data) {
     }
 };
 const newTaskInput = document.querySelector('#assign');
-
-newTaskInput.addEventListener('submit', (eventE) => {
+console.log(newTaskInput);
+newTaskInput.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log('Test');
     const taskNameInput = document.querySelector('#doThis');
     const taskNameValue = taskNameInput.value;
+    console.log(taskNameValue);
     const descriptionInput = document.querySelector('#describeIt');
     const descriptionInputValue = descriptionInput.value;
+    console.log(descriptionInputValue);
     const assignedToInput = document.querySelector('#forYou');
     const assignedToValue = assignedToInput.value;
-validFormFieldInput(taskNameValue);
-    
+validFormFieldInput();
+
 })
 
+//tM.addTask(this.currentId, "Wash dishes", "Use soap", "Clarabele", "09/17/22"); < works
 
 
 
