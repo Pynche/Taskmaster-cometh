@@ -19,11 +19,7 @@ newTaskInput.addEventListener('submit', (event) => {
     console.log(descriptionInputValue);
     const assignedToInput = document.querySelector('#forYou');
     const assignedToValue = assignedToInput.value;
-<<<<<<< HEAD
     validFormFieldInput(taskNameValue);
-=======
-validFormFieldInput();
->>>>>>> main
 
 })
 
@@ -34,5 +30,10 @@ console.log(taskHtml)
 
 
 
-
 //console.log("name:  "+name);
+
+
+// Call render: Event listener selector
+TaskManager.addTask
+TaskManager.render();
+

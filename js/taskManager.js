@@ -7,6 +7,9 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status) => {
          <p class="smallContent">${description}</p> <!--Description-->
          <p class="smallContent">${status}</p>
          <button type="submit">Done</button>
+
+        <!--button--> 
+        <button class="btn btn-$indigo-300" type="Mark as Done">Button</button>
       </div>
     </div>`
     return task1
@@ -14,34 +17,43 @@ const createTaskHtml = (name, description, assignedTo, dueDate, status) => {
 
 }
 
-
+// console.log('danielle', 'something something', 'rose', '12/03/21');
 
 class TaskManager {
-<<<<<<< HEAD
     constructor(currentId = 0) {
-        this.currentID = currentID
-        this.tasks = [];
-    }
-    render() {
-        let taskHtmlList = []
-
-=======
-    constructor(currentId = 0){ 
         this.currentId = currentId
         this.tasks = [];
-    
->>>>>>> main
     }
-    addTask(id = this.currentId, nme, description, assignedTo, dueDate, stat ='TODO') {
+
+    addTask(id = this.currentId, name, description, assignedTo, dueDate, stat = 'TODO') {
         this.currentId++;
-        this.tasks.push({id, nme, description, assignedTo, dueDate, stat});
-console.log(this.tasks);
-    } 
-}
+        this.tasks.push({ id, name, description, assignedTo, dueDate, stat });
+        console.log(this.tasks);
+    }
+};
 
 
+// Render method
+render() {
+    {
+        let taskHtmlList = [];
+        for (let i = 0; i < taskHtmlList.length; i++) {
+            let taskHtmlList = this.tasks[i];
+            let date = newDate("2022, 21, 12");
+            // let formattedDate = []
 
-<<<<<<< HEAD
+            let taskHtml = createTaskHtml(this.tasks.name, this.tasks.description, this.tasks.assignedTo, this.tasks.dueDate, formattedDate, this.tasks.Date, this.tasks.stat);
+            taskHtml.push(taskHtmlList)
+        }
 
-=======
->>>>>>> main
+        let taskHtml = taskHtmlList.join("\n");
+
+        // 5.Need help on Task list in index.htl has id so it can be selected.//
+        //    6. setting inner Html to the taskHtml //
+
+
+        // console.log(taskHtmlList[i]);
+    }
+};
+
+
