@@ -35,25 +35,28 @@ class TaskManager {
 
 // Render method
 render() {
-    {
+    
         let taskHtmlList = [];
         for (let i = 0; i < taskHtmlList.length; i++) {
             let taskHtmlList = this.tasks[i];
-            let date = newDate("2022, 21, 12");
+            let date = new Date("2022, 21, 12");
             // let formattedDate = []
-
+      
             let taskHtml = createTaskHtml(this.tasks.name, this.tasks.description, this.tasks.assignedTo, this.tasks.dueDate, formattedDate, this.tasks.Date, this.tasks.stat);
             taskHtml.push(taskHtmlList)
-        }
+        };
+        let tasksHtml = taskHtmlList.join("\n");
+        document.querySelector('#parent-ad').innerHTML= tasksHtml //how many things can fit in one variable?
+    };
 
-        let taskHtml = taskHtmlList.join("\n");
+        
 
         // 5.Need help on Task list in index.htl has id so it can be selected.//
         //    6. setting inner Html to the taskHtml //
 
 
         // console.log(taskHtmlList[i]);
-    }
-};
+    
+
 
 

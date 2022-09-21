@@ -34,6 +34,6 @@ console.log(taskHtml)
 
 
 // Call render: Event listener selector
-TaskManager.addTask
+TaskManager.addTask();
 TaskManager.render();
 
