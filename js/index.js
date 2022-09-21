@@ -42,13 +42,19 @@ Submit = document.querySelector('#submit-form');
 Submit.addEventListener("click, vallidFormFIieldInput");
 
 
-let taskHtml = document.querySelector('task-list')
+let tasksHtml = document.querySelector('render-task-list')
 tasksList.addEventListener('click', (event) => { // "event" here is the event parameter
     if (event.target.classList.('done-button')) {
         let parentTask = event.target.closest('li');
-        let
+        // Making get attribute
+        let taskId =
+
             // Adding the task id to Dom
-            let TaskId = 
+            let TaskId =
+                let task = TaskManager.getTaskbyId(taskId);
+        task status = 'Done';
+
+
     }
 });
 
