@@ -37,3 +37,19 @@ console.log(taskHtml)
 TaskManager.addTask
 TaskManager.render();
 
+// event listener query selector
+Submit = document.querySelector('#submit-form');
+Submit.addEventListener("click, vallidFormFIieldInput");
+
+
+let taskHtml = document.querySelector('task-list')
+tasksList.addEventListener('click', (event) => { // "event" here is the event parameter
+    if (event.target.classList.('done-button')) {
+        let parentTask = event.target.closest('li');
+        let
+            // Adding the task id to Dom
+            let TaskId = 
+    }
+});
+
+
